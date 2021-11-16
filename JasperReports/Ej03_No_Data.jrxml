@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Ej03_No_Data" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c60dd7ae-8dc1-4819-b99b-aef77fe67822">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Ej03_No_Data" language="javascript" pageWidth="595" pageHeight="842" whenNoDataType="NoDataSection" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c60dd7ae-8dc1-4819-b99b-aef77fe67822">
 	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
 	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Sakila"/>
 	<queryString language="SQL">
@@ -136,4 +136,12 @@
 	<summary>
 		<band/>
 	</summary>
+	<noData>
+		<band height="200">
+			<staticText>
+				<reportElement x="143" y="74" width="100" height="30" uuid="2f6e8ec2-bde6-4554-8fce-775db6cccb36"/>
+				<text><![CDATA[No se ha generado el informe porque bla bla blá]]></text>
+			</staticText>
+		</band>
+	</noData>
 </jasperReport>
