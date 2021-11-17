@@ -173,8 +173,13 @@ order by customers.customerName, orderDetails.orderNumber ]]>
 			</band>
 		</groupHeader>
 		<groupFooter>
-			<band height="30">
+			<band height="43">
 				<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				<textField>
+					<reportElement x="170" y="6" width="214" height="30" uuid="710d64e4-07ad-4c13-882d-d9bb82889de8"/>
+					<textElement textAlignment="Justified"/>
+					<textFieldExpression><![CDATA["Fin del cliente "+$F{customerName}]]></textFieldExpression>
+				</textField>
 			</band>
 		</groupFooter>
 	</group>
