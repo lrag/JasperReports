@@ -1,102 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.10.0.final using JasperReports Library version 6.10.0-unknown  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Ej05_Parametros" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cd3f0e9c-be34-4bb7-acf6-4e3eef4979b4">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Ej05_Parametros" columnCount="2" pageWidth="595" pageHeight="842" columnWidth="267" columnSpacing="20" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cd3f0e9c-be34-4bb7-acf6-4e3eef4979b4">
 	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
-	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="Sakila"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (2)"/>
+	<parameter name="ruta_imagen" class="java.lang.String"/>
 	<queryString language="SQL">
-		<![CDATA[select * from film]]>
+		<![CDATA[select * from products]]>
 	</queryString>
-	<field name="film_id" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.label" value="film_id"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="film"/>
+	<field name="productCode" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="productCode"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="products"/>
 	</field>
-	<field name="title" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.label" value="title"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="film"/>
+	<field name="productName" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="productName"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="products"/>
 	</field>
-	<field name="description" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.label" value="description"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="film"/>
+	<field name="productLine" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="productLine"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="products"/>
 	</field>
-	<field name="release_year" class="java.sql.Date">
-		<property name="com.jaspersoft.studio.field.label" value="release_year"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="film"/>
+	<field name="productScale" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="productScale"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="products"/>
 	</field>
-	<field name="language_id" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.label" value="language_id"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="film"/>
+	<field name="productVendor" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="productVendor"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="products"/>
 	</field>
-	<field name="original_language_id" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.label" value="original_language_id"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="film"/>
+	<field name="productDescription" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.label" value="productDescription"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="products"/>
 	</field>
-	<field name="rental_duration" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.label" value="rental_duration"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="film"/>
+	<field name="quantityInStock" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.label" value="quantityInStock"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="products"/>
 	</field>
-	<field name="rental_rate" class="java.math.BigDecimal">
-		<property name="com.jaspersoft.studio.field.label" value="rental_rate"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="film"/>
+	<field name="buyPrice" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.label" value="buyPrice"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="products"/>
 	</field>
-	<field name="length" class="java.lang.Integer">
-		<property name="com.jaspersoft.studio.field.label" value="length"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="film"/>
-	</field>
-	<field name="replacement_cost" class="java.math.BigDecimal">
-		<property name="com.jaspersoft.studio.field.label" value="replacement_cost"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="film"/>
-	</field>
-	<field name="rating" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.label" value="rating"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="film"/>
-	</field>
-	<field name="special_features" class="java.lang.String">
-		<property name="com.jaspersoft.studio.field.label" value="special_features"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="film"/>
-	</field>
-	<field name="last_update" class="java.sql.Timestamp">
-		<property name="com.jaspersoft.studio.field.label" value="last_update"/>
-		<property name="com.jaspersoft.studio.field.tree.path" value="film"/>
+	<field name="MSRP" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.label" value="MSRP"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="products"/>
 	</field>
 	<background>
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="47" splitType="Stretch">
+		<band height="70" splitType="Stretch">
 			<staticText>
 				<reportElement x="10" y="0" width="204" height="30" forecolor="#0D81FC" uuid="0a28de9e-b782-4e29-9115-093e9fe1f6a7"/>
 				<textElement>
 					<font size="16" isBold="true"/>
 				</textElement>
-				<text><![CDATA[Listado de películas]]></text>
+				<text><![CDATA[Listado de productos]]></text>
 			</staticText>
+			<image>
+				<reportElement x="280" y="0" width="100" height="64" uuid="52f959e9-e7c3-4fa7-9a6b-6d0af8328e95"/>
+				<imageExpression><![CDATA[$P{ruta_imagen}]]></imageExpression>
+			</image>
 		</band>
 	</title>
 	<pageHeader>
 		<band height="35" splitType="Stretch"/>
 	</pageHeader>
 	<columnHeader>
-		<band height="61" splitType="Stretch">
-			<staticText>
-				<reportElement x="46" y="0" width="100" height="30" uuid="414badfd-35a8-4601-b8c8-28806b38bc5a">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ce66b128-e2da-49e2-8398-4c1ab9303d30"/>
-				</reportElement>
-				<text><![CDATA[title]]></text>
-			</staticText>
+		<band splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
 		</band>
 	</columnHeader>
 	<detail>
-		<band height="125" splitType="Stretch">
-			<textField>
-				<reportElement x="46" y="31" width="100" height="30" uuid="abba2ff4-35d2-4b9d-8306-999369e7c4be">
-					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="ce66b128-e2da-49e2-8398-4c1ab9303d30"/>
-				</reportElement>
-				<textFieldExpression><![CDATA[$F{title}]]></textFieldExpression>
-			</textField>
+		<band height="177" splitType="Stretch">
+			<frame>
+				<reportElement x="10" y="8" width="260" height="160" uuid="ce6c4685-fcd0-4456-8cf1-5438256d9301"/>
+				<box padding="1">
+					<topPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<leftPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<bottomPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+					<rightPen lineWidth="1.0" lineStyle="Solid" lineColor="#000000"/>
+				</box>
+				<textField>
+					<reportElement x="10" y="10" width="142" height="30" forecolor="#FC9E05" uuid="c6744d79-dbf8-4c81-a2f0-a4a28cedc7ea"/>
+					<textElement>
+						<font size="16"/>
+					</textElement>
+					<textFieldExpression><![CDATA[$F{productCode}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="10" y="40" width="240" height="20" uuid="cda63d6b-7c1c-4c4d-998a-0f56f7fd083b"/>
+					<textFieldExpression><![CDATA[$F{productName}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="10" y="100" width="240" height="48" uuid="6f0fa839-c846-4f34-a5b9-66502cbc604d"/>
+					<textFieldExpression><![CDATA[$F{productDescription}]]></textFieldExpression>
+				</textField>
+				<textField>
+					<reportElement x="86" y="70" width="94" height="18" uuid="aef6a1a0-5b76-4d58-bd2b-718d07dcc805"/>
+					<textFieldExpression><![CDATA[$F{quantityInStock}]]></textFieldExpression>
+				</textField>
+				<staticText>
+					<reportElement x="10" y="70" width="76" height="20" uuid="844ba873-9523-4a0c-815b-f0acd65e7f67"/>
+					<text><![CDATA[Existencias:]]></text>
+				</staticText>
+			</frame>
 		</band>
 	</detail>
 	<columnFooter>
-		<band height="45" splitType="Stretch"/>
+		<band splitType="Stretch">
+			<property name="com.jaspersoft.studio.unit.height" value="px"/>
+		</band>
 	</columnFooter>
 	<pageFooter>
 		<band height="54" splitType="Stretch"/>
