@@ -37,7 +37,7 @@ public class Aplicacion {
 	
 			//El informe necesita una colección de películas
 			Collection<Pelicula> peliculas = PeliculasBeanFactory.getPeliculas();
-			JRBeanCollectionDataSource CDS =new JRBeanCollectionDataSource(peliculas);
+			JRBeanCollectionDataSource CDS = new JRBeanCollectionDataSource(peliculas);
 			
 			//Proporcionamos al informe lo necesario
 			Map<String, Object> parametros = new HashMap<>();

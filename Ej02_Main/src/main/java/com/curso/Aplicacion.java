@@ -25,6 +25,8 @@ public class Aplicacion {
 		try {
 			//Leemos el xml con la definición del informe			
 			InputStream streamInforme = Aplicacion.class.getClassLoader().getResourceAsStream("informes/Ej01_Jasper.jrxml");
+			
+			//Compilamos el informe (podemos tenerlo ya compilado)
 			JasperReport informe  = JasperCompileManager.compileReport(streamInforme);
 			
 			//Guardamos el compilado en un fichero

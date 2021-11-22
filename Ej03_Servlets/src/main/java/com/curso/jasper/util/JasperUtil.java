@@ -30,6 +30,9 @@ import net.sf.jasperreports.export.SimpleOutputStreamExporterOutput;
 
 public class JasperUtil {
 	
+	private JasperUtil() {
+	}
+	
 	private static JasperReport getInforme(String nombreInforme) throws URISyntaxException, IOException, JRException {
 		
 		//Obtenemos la ruta a src/main/resources
@@ -81,7 +84,7 @@ public class JasperUtil {
             exporter.setExporterOutput(new SimpleHtmlExporterOutput(outputStream));
             break;
         }
-        
+       
         //Proporcionamos la entrada
 		exporter.setExporterInput(new SimpleExporterInput(jasperPrint));
 
