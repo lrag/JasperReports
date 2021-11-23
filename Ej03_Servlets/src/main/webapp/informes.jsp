@@ -12,15 +12,6 @@
 
 </head>
 
-<script type="application/javascript">
-
-window.onload = function(){
-	
-}
-
-
-</script>
-
 <body>
 
  	<div class="text-center page-header">
@@ -103,8 +94,8 @@ window.onload = function(){
 			    <hr class="mt-4 mb-4"/>			    
 			    
 			</div>
-			    
-    	</form>
+		
+		</div>
     
     </div>
 

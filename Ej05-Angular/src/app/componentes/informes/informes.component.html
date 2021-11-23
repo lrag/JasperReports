@@ -1,0 +1,50 @@
+   
+<h3 class="text-center mt-3 mb-3">
+    Formulario de informes
+</h3>
+
+<!-- PEDIDOS POR CLIENTES -->
+
+<hr class="mt-4 mb-4"/>
+
+<h3>Pedidos por cliente</h3>
+
+<form action="http://localhost:1880/informes/PedidosCliente" method="POST" target="_blanck" class="row">
+
+    <div class="col-3 mt-1">
+        <label>Código de cliente</label>
+    </div>
+    
+    <div class="col-6 mt-1">
+        <input type="text" name="codigoCliente" class="form-control" required="required"/>
+    </div>
+
+    <div class="col-3 mt-1">
+        <input type="submit" name="formato" class="btn btn-primary mr-2" value="HTML"/>
+        <input type="submit" name="formato" class="btn btn-primary mr-2" value="PDF"/>
+    </div>
+</form>
+
+<!-- EMPLEADOS POR OFICINAS -->
+
+<hr class="mt-4 mb-4"/>
+
+<h3>Empleados por oficina</h3>
+
+<form action="http://localhost:1880/informes/EmpleadosOficina" method="POST" target="_blanck" class="row">
+
+    <div class="col-3 mt-1">
+        <label>Código de la oficina (op)</label>
+    </div>
+    
+    <div class="col-6 mt-1">
+        <input type="text" name="codigoOficina" class="form-control" placeholder="opcional"/>
+    </div>
+
+    <div class="col-3 mt-1">
+        <input type="submit" name="formato" class="btn btn-primary mr-2" value="HTML"/>
+        <input type="submit" name="formato" class="btn btn-primary mr-2" value="PDF"/>
+    </div>
+</form>
+
+<hr class="mt-4 mb-4"/>	

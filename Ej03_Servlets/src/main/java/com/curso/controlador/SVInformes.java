@@ -45,6 +45,10 @@ public class SVInformes extends HttpServlet {
 				}
 				parametros.put("codigoOficina", codigoOficina);
 				break;
+			default :
+				response.setStatus(404);
+				response.getWriter().println("No existe el informe");
+				return;
 		}	
 		
 		Formato formato = Formato.valueOf(formatoStr);
@@ -52,12 +56,10 @@ public class SVInformes extends HttpServlet {
 		
 		try {
 			JasperUtil.ejecutarInforme(nombreInforme, formato, parametros, response.getOutputStream());
-		} catch (URISyntaxException e) {
-			e.printStackTrace();
-		} catch (JRException e) {
-			e.printStackTrace();
 		} catch (Exception e) {
-			e.printStackTrace();
+			response.setStatus(500);
+			response.getWriter().println(e.getMessage());
+			return;
 		}
 		
 	}
